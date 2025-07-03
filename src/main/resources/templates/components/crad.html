@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body class="h-80 w-60 bg-contain bg-no-repeat rounded-lg hover:-translate-y-1 hover:scale-110 transition delay-150 duration-300 ease-in-out">
+<div th:fragment="crad(product)" class="bg-gray-700 opacity-90 rounded-lg w-full h-full flex flex-col justify-between p-3">
+    <a  >
+        <img th:src="${product.img}" />
+        <h5 class="text-start" th:text="${product.name}">hi</h5>
+        <div class="flex space-x-2 w-full">
+        <p th:text="${product.price}">hi</p>
+        <p th:txet="${product.rate}">hi</p>
+        </div>
+   </a>
+</div>
+</body>
+</html>
